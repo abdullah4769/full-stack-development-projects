@@ -1,0 +1,137 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f4f8fc;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* --- Header --- */
+header {
+  background-color: #004080;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #00bcd4;
+  color: #004080;
+}
+
+/* Toggle (Mobile Menu) */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* --- Main Content --- */
+main {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+main h1 {
+  font-size: 2rem;
+  color: #004080;
+  margin-bottom: 2rem;
+}
+
+/* Logout Button */
+main a {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(to right, #004080, #00bcd4);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+main a:hover {
+  opacity: 0.9;
+}
+
+/* --- Footer --- */
+footer.simple-footer {
+  background-color: #004080;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.95rem;
+  border-top: 3px solid #00bcd4;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* --- Responsive Layout --- */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    background-color: #004080;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  main {
+    margin: 20px;
+    padding: 1.5rem;
+  }
+}

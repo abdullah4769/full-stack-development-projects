@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>National Travel Management System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/download.jpeg') }}">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-logo">National Travel Management System</div>
+      <ul class="nav-links">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+<li><a href="{{ url_for('login') }}">Login</a></li>
+<li><a href="{{ url_for('show_signup') }}">Sign Up</a></li>
+
+        
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+  <main>  
+    <h2>Welcome to Auth System</h2>
+  <a href="{{ url_for('signup') }}">Sign Up</a> | <a href="{{ url_for('login') }}">Login</a>
+
+  </main>
+<footer class="simple-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 National Travel Management System</p>
+   
+</footer>
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
