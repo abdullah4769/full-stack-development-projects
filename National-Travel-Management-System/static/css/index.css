@@ -1,0 +1,199 @@
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+/* Navbar Styles */
+.navbar {
+    background-color: #004080;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.05rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+/* Responsive Menu Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        margin-top: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+ main {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+.hero {
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+     height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 0 20px;
+    max-width: 980px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+/* About Section */
+/* About Section */
+.about {
+  margin: 60px auto 70px;   /* top margin increased to 60px, bottom to 70px */
+  background-color: #e0f0ff; /* soft light blue, consistent with palette */
+  border-radius: 12px;
+  padding: 40px 30px;       /* padding thora bada kia for better spacing */
+  box-shadow: 0 4px 15px rgba(0, 64, 128, 0.15); /* subtle blue shadow for style */
+  max-width: 900px;          /* control max width for better readability */
+}
+
+.about h2 {
+  margin-bottom: 20px;
+  color: #004080;            /* strong navbar blue */
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.about p {
+  font-size: 18px;
+  color: #1a1a1a;
+  max-width: 800px;
+  line-height: 1.6;          /* improve line spacing */
+  margin-bottom: 15px;
+}
+
+.about .services {
+  margin-top: 25px;
+  font-weight: 600;
+  color: #004080;
+}
+/* How It Works Section */
+.steps-section {
+  background-color: #e0f0ff; /* light blue tint */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.steps-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #004080;
+  font-weight: 700;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.step-card {
+  background-color: #b3d9fa;
+   box-shadow: 0 4px 20px rgba(0, 64, 128, 0.15);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 64, 128, 0.1);
+  flex: 1 1 250px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 64, 128, 0.2);
+}
+
+.step-card h3 {
+  color: #004080;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.step-card p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .steps-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-card {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+.simple-footer {
+  background-color: #004080;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 15px;
+}
+
+.simple-footer .footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}

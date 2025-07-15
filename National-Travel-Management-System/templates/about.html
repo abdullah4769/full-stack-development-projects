@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | National Travel Management System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}" />
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/download.jpeg') }}"> 
+</head>
+<body>
+
+  <!-- ✅ Same Navbar as Homepage -->
+   <header>
+    <nav class="navbar">
+      <div class="nav-logo">National Travel Management System</div>
+      <ul class="nav-links">
+        <li><a href="{{ url_for('auth.home') }}">Home</a></li>
+        <li><a href="{{ url_for('auth.login') }}">Login </a></li>
+        <li><a href="{{ url_for('auth.signup') }}">Sign Up</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- ✅ New About Page Content -->
+  <main>
+    <section class="about-page">
+      <h2>About National Travel Management System</h2>
+      <p>
+        National Travel Management System is developed by Abdullah Abid with the mission to simplify and digitize travel bookings across Pakistan. We aim to connect people with reliable transportation, transparent fare calculations, and user-friendly interfaces.
+      </p>
+      <p>
+        Whether you're traveling for work or leisure, our system ensures a seamless and secure booking process. We value your time, your safety, and your experience.
+      </p>
+    </section>
+
+<!-- section of destinations -->
+ <section class="destinations">
+  <h2>Explore Our Top Destinations</h2>
+  <div class="destinations-grid">
+    <div class="destination">
+      <img src="{{ url_for('static', filename='images/murree.jpg') }}" alt="Murree" />
+      <h3>Murree</h3>
+    </div>
+    <div class="destination">
+      <img src="{{ url_for('static', filename='images/Narh Noorabad.jpg') }}" alt="Narh Noorabad" />
+      <h3>Narh Noorabad</h3>
+    </div>
+    <div class="destination">
+      <img src="{{ url_for('static', filename='images/pak china border.jpg') }}" alt="Pak China Border" />
+      <h3>Pak China Border</h3>
+    </div>
+    <div class="destination">
+      <img src="{{ url_for('static', filename='images/gilgit.jpg') }}" alt="Gilgit Baltistan" />
+      <h3>Gilgit Baltistan</h3>
+    </div>
+    <div class="destination">
+      <img src="{{ url_for('static', filename='images/mazar e qaid.jpg') }}" alt="Mazar e Quaid" />
+      <h3>Mazar e Quaid</h3>
+    </div>
+    <div class="destination">
+      <img src="{{ url_for('static', filename='images/supremecourt of Pakisan.jpg') }}" alt="Supreme Court" />
+      <h3>Supreme Court</h3>
+    </div>
+    <div class="destination">
+      <img src="{{ url_for('static', filename='images/badshahi masjid.jpg') }}" alt="Badshahi Mosque" />
+      <h3>Badshahi Mosque</h3>
+    </div>
+    <div class="destination">
+      <img src="{{ url_for('static', filename='images/ziarat.jpg') }}" alt="Ziarat" />
+      <h3>Ziarat</h3>
+    </div>
+  </div>
+</section>
+
+  <section class="why-choose">
+  <h2>Why Choose National Travel Management System?</h2>
+  <p>
+    We proudly operate all across Pakistan, connecting you to every corner of this beautiful country.  
+    Our mission goes beyond business – we strive to create lasting memories while ensuring the utmost comfort for our customers.
+  </p>
+  <p>
+    From the serene cold mountains to the vast plains, from historic landmarks to the modern cityscape of Islamabad,  
+    we cover all kinds of tourism destinations. Whether it's Gilgit, Karachi, Kashmir, Quetta, or every important district in Pakistan,  
+    we have you covered.
+  </p>
+</section>
+<section class="community-slider">
+  <h2>Join Our Travel Community</h2>
+  <div class="slider-container">
+    <button class="slider-btn left" aria-label="Previous Image">&#8249;</button>
+    <div class="slider-window">
+      <div class="slider-track">
+         <img src="{{ url_for('static', filename='images/huzaifa_group.jpg') }}" alt="just chilling boys" />
+        <img src="{{ url_for('static', filename='images/another.jpeg') }}" alt="another traveler" />
+        <img src="{{ url_for('static', filename='images/men.jpeg') }}" alt="another traveler" />
+        <img src="{{ url_for('static', filename='images/tourists_gilgit.jpeg') }}" alt="another traveler" />
+        <img src="{{ url_for('static', filename='images/travel_karachi.jpeg') }}" alt="another traveler" />
+        <img src="{{ url_for('static', filename='images/huzaifa_group.jpg') }}" alt="just chilling boys" />
+        <!-- Add more images as needed -->
+      </div>
+    </div>
+    <button class="slider-btn right" aria-label="Next Image">&#8250;</button>
+  </div>
+</section>
+
+  </main>
+
+  <!-- ✅ Same Footer -->
+  <footer class="simple-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 National Travel Management System</p>
+   
+</footer>
+<script src="{{ url_for('static', filename='js/about.js') }}"></script>
+
+</body>
+</html>

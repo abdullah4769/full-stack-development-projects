@@ -1,0 +1,189 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar (same as index.css for consistency) */
+.navbar {
+  background-color: #004080;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    margin-top: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Signup Form Container */
+.form-container {
+  background-color: #e0f0ff;
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 64, 128, 0.15);
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #004080;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+  color: #004080;
+  font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #004080;
+}
+
+button[type="submit"] {
+  background-color: #004080;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0059b3;
+}
+
+/* Show Password Label */
+form label input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* CAPTCHA and Links */
+#captcha-question {
+  font-weight: bold;
+  color: #004080;
+}
+
+.form-container p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+.form-container a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form-container a:hover {
+  color: #00bcd4;
+}
+
+/* Footer (same style as index.css) */
+.simple-footer {
+  background-color: #004080;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 15px;
+}
+
+.simple-footer .footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.password-info {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
+.show-password-label {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #004080;
+}

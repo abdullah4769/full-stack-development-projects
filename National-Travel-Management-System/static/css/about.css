@@ -1,0 +1,234 @@
+/* Reset and Base Styles */
+  /* Reset & basics */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+/* Navbar Styles */
+.navbar {
+    background-color: #004080;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.05rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+/* Responsive Menu Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        margin-top: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+ main {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+.simple-footer .footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.about-page {
+  background-color: #e0f0ff;
+  padding: 40px;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  color: #1a1a1a;
+}
+
+.about-page h2 {
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+/* destinationa */
+ /* Destinations */
+    .destinations {
+      margin-bottom: 50px;
+    }
+    .destinations h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #004080;
+    }
+    .destinations-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 20px;
+    }
+    .destination {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      text-align: center;
+    }
+    .destination:hover {
+      transform: scale(1.05);
+    }
+    .destination img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-bottom: 2px solid #004080;
+    }
+    .destination h3 {
+      padding: 10px 0;
+      color: #004080;
+    }
+
+.why-choose {
+  background-color: #e0f0ff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 50px auto;
+  box-shadow: 0 0 15px rgba(0, 64, 128, 0.15);
+  color: #1a1a1a;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.why-choose h2 {
+  color: #004080;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.why-choose p {
+  margin-bottom: 20px;
+}
+
+/* for community */
+.community-slider {
+  max-width: 900px;    /* thoda bada container */
+  margin: 50px auto 70px;
+  padding: 20px;
+  background-color: #e0f0ff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 64, 128, 0.15);
+  text-align: center;
+}
+
+.community-slider h2 {
+  color: #004080;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-window {
+  width: 800px;   /* visible image ka width barhaya */
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider-track img {
+  width: 800px;  /* same as slider-window width */
+  height: 450px; /* thoda height bhi barha di for better proportion */
+  object-fit: cover;
+  flex-shrink: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slider-btn {
+  background-color: #004080;
+  border: none;
+  color: white;
+  font-size: 32px;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 15px;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+  background-color: #003366;
+}
+
+/* Footer */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 60px;
+  font-size: 15px;
+}
+.welcome-section a.btn {
+  display: inline-block;
+  margin-bottom: 30px; /* spacing between button and "Your Bookings" */
+}

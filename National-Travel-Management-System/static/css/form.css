@@ -1,0 +1,283 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #004080;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+  color: #b3d9fa;
+}
+
+/* Form Section */
+.form-section {
+  max-width: 900px;
+  margin: 60px auto;
+  background-color: #e0f0ff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 64, 128, 0.1);
+}
+
+.form-section h2 {
+  text-align: center;
+  color: #004080;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+
+.form-section h3 {
+  color: #004080;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.form-section label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 600;
+  color: #004080;
+}
+
+.form-section input[type="text"],
+.form-section select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Button Styling */
+.btn {
+  background-color: #004080;
+  color: white;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #0066cc;
+}
+
+/* Footer */
+.simple-footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+
+  .navbar .menu-toggle {
+    display: block;
+  }
+
+  .navbar.active .nav-links {
+    display: flex;
+  }
+
+  .form-section {
+    padding: 30px 20px;
+  }
+}
+
+.form-summary .developer-credit {
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+    color: #155724;
+}
+
+/* Styling for the PDF View */
+.pdf-view {
+  background-color: #ffffff !important; /* Force white background */
+  color: #000000 !important; /* Black text */
+  padding: 40px !important;
+  border: 1px solid #dee2e6;
+  box-shadow: none !important; /* Remove original shadow */
+}
+
+.pdf-view h2 {
+  color: #004080 !important;
+  text-align: left !important;
+  font-size: 2rem !important;
+  border-bottom: 2px solid #004080;
+  padding-bottom: 10px;
+  margin-bottom: 30px !important;
+}
+
+.pdf-view p {
+  font-size: 1.1rem !important;
+  line-height: 1.8;
+  margin-bottom: 12px !important;
+}
+
+.pdf-view .developer-credit {
+  text-align: center !important;
+  font-size: 0.8rem !important;
+  color: #6c757d !important;
+  margin-top: 40px !important;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+
+/* static/css/form.css */
+
+/* Basic styling for alerts */
+.alert {
+    padding: 10px;
+    margin: 15px auto;
+    border-radius: 4px;
+    width: 80%; /* Adjust width for alerts */
+    text-align: center;
+}
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+/* Form container styling */
+.form-container {
+    max-width: 600px; /* Adjust as needed */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container select {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the PDF view (if html2canvas is still used) */
+.form-summary {
+    background-color: #d4edda;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 128, 0, 0.2);
+    margin-top: 30px;
+    color: #155724;
+}
+
+.form-summary h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.form-summary p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
