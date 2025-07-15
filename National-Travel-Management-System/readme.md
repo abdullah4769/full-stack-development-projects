@@ -1,14 +1,3 @@
-National Travel Management System – Pakistan 🇵🇰
-This project started as a 4th semester database assignment, but evolved into a complete Full-Stack Travel Management System!
-
-It is designed specifically for managing travel across Pakistan, including fare calculations, dynamic location selection, and booking management.
-
-Features
-User Registration & Login
-Simple signup system with strong password authentication.
-
-User-Friendly Interface
-Includes destination images to attract users and create a travel-friendly experience.
 
 Setup Instructions:
 
